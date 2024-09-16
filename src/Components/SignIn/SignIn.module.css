@@ -1,0 +1,697 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+}
+.container::-webkit-scrollbar {
+  display: none;
+}
+.loginFirstContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.loginSecondContainer {
+  width: 65vw;
+  height: 70vh;
+  box-shadow: 18px 18px 40px 0px #7090b01f;
+  border-radius: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.containerLeft {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(#ededed, #3f4246);
+}
+.leftImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+}
+.leftImage img {
+  width: 100%;
+  height: 100%;
+}
+.containerRight {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.mLogoContainer {
+  display: none;
+}
+.rightHeader {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 70%;
+}
+.rightHeader p {
+  font-family: "Poppins";
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 56px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #2b2e36;
+  padding-top: 0.75rem;
+}
+.rightHeader svg {
+  color: #dc2f00;
+  font-size: 0.5rem;
+  margin-top: 1.5rem;
+  margin-left: 0.25rem;
+}
+.rightSecondHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 70%;
+}
+.rightSecondHeader p {
+  font-family: "DM Sans";
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #2b2e36;
+}
+.rightSecondHeader span {
+  font-family: "Poppins";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #959aa5;
+}
+.rightInputContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 70%;
+  padding-top: 1.5rem;
+}
+.inputValue {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+.inputValue:nth-child(2) {
+  padding-top: 0.75rem;
+}
+.inputValue p {
+  font-family: "Poppins";
+  font-size: 0.85rem;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #fe1818;
+}
+.inputValue label {
+  font-family: "Poppins";
+  font-size: 0.85rem;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #2b2e36;
+}
+.inputValue input {
+  width: 95%;
+  height: 2.5rem;
+  border: 2px solid #d3d3d3;
+  border-radius: 8px;
+  padding-left: 0.75rem;
+  margin: 0.75rem 0;
+  font-family: "Poppins";
+  font-size: 0.85rem;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #959aa5;
+  outline: none;
+}
+.inputValue input::-webkit-input-placeholder {
+  color: #959aa5;
+}
+.passwordInput {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 2.5rem;
+  border: 2px solid #d3d3d3;
+  border-radius: 8px;
+  margin: 0.75rem 0;
+}
+.passwordInput input {
+  border: none;
+  margin: 0;
+  width: 100%;
+}
+.passwordInput svg {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  color: #2b2e36;
+}
+.forgotContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+.forgotContainer p {
+  font-family: "Poppins";
+  font-size: 0.85rem;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #2b2e36;
+  cursor: pointer;
+}
+.rightLoginButton {
+  width: 70%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.rightLoginButton button {
+  width: 90%;
+  height: 2.5rem;
+  border-radius: 8px;
+  border: none;
+  background: #2b2e36;
+  font-family: "Poppins";
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  margin: 1rem 0;
+}
+.registerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 70%;
+}
+.registerContainer p {
+  font-family: "Poppins";
+  font-size: 0.85rem;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #2b2e36;
+}
+.registerContainer span {
+  font-family: "Poppins";
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #959aa5;
+  padding-left: 0.5rem;
+  cursor: pointer;
+}
+@media only screen and (max-width: 480px) {
+  .loginSecondContainer {
+    width: 95%;
+    height: 95%;
+    box-shadow: 18px 18px 40px 0px #25313d8c;
+    border: 1px solid #cfd3d8;
+  }
+  .containerLeft {
+    display: none;
+  }
+  .containerRight {
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+  }
+  .mLogoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .mImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+  }
+  .mImage img {
+    width: 100%;
+    height: 100%;
+    padding-top: 1.25rem;
+  }
+  .rightHeader {
+    width: 100%;
+    justify-content: center;
+  }
+  .rightHeader p {
+    font-size: 1.5rem;
+  }
+  .rightHeader svg {
+    display: none;
+  }
+  .rightSecondHeader {
+    align-items: center;
+    width: 100%;
+  }
+  .rightSecondHeader p {
+    font-size: 1.5rem;
+  }
+  .rightSecondHeader span {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .rightInputContainer {
+    width: 100%;
+    justify-content: center;
+  }
+  .inputValue {
+    align-items: center;
+  }
+  .inputValue label {
+    font-size: 1rem;
+    width: 100%;
+    padding-left: 1.75rem;
+  }
+  .inputValue p {
+    font-size: 1rem;
+    width: 100%;
+    padding-left: 1.75rem;
+  }
+  .inputValue input {
+    width: 90%;
+    height: 3rem;
+    font-size: 0.85rem;
+    margin: 1rem 0;
+  }
+
+  .passwordInput {
+    width: 93%;
+    height: 3rem;
+    margin: 1rem 0;
+  }
+  .passwordInput input {
+    margin: 0;
+  }
+  .passwordInput svg {
+    font-size: 1.5rem;
+  }
+  .forgotContainer p {
+    font-size: 0.95rem;
+    padding-right: 0.75rem;
+  }
+  .rightLoginButton {
+    width: 100%;
+    align-items: flex-start;
+  }
+  .rightLoginButton button {
+    height: 3rem;
+    font-size: 1rem;
+  }
+  .registerContainer {
+    width: 100%;
+  }
+  .registerContainer p {
+    font-size: 1rem;
+  }
+  .registerContainer span {
+    font-size: 1rem;
+    padding-right: 0.75rem;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .loginSecondContainer {
+    width: 95%;
+    height: 95%;
+    box-shadow: 18px 18px 40px 0px #25313d8c;
+    border: 1px solid #cfd3d8;
+  }
+  .containerLeft {
+    display: none;
+  }
+  .containerRight {
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+  }
+  .mLogoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .mImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+  }
+  .mImage img {
+    width: 100%;
+    height: 100%;
+    padding-top: 2rem;
+  }
+  .rightHeader {
+    width: 100%;
+    height: 10%;
+    justify-content: center;
+  }
+  .rightHeader p {
+    font-size: 2rem;
+  }
+  .rightHeader svg {
+    display: none;
+  }
+  .rightSecondHeader {
+    align-items: center;
+    width: 100%;
+  }
+  .rightSecondHeader p {
+    font-size: 2rem;
+  }
+  .rightSecondHeader span {
+    font-size: 1.5rem;
+    line-height: 45px;
+    text-align: center;
+  }
+  .rightInputContainer {
+    width: 100%;
+    justify-content: center;
+  }
+  .inputValue {
+    align-items: center;
+  }
+  .inputValue label {
+    font-size: 1.75rem;
+    width: 100%;
+    padding-left: 3rem;
+  }
+  .inputValue p {
+    font-size: 1.75rem;
+    width: 100%;
+    padding-left: 3rem;
+  }
+  .inputValue input {
+    width: 90%;
+    height: 4.25rem;
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+  }
+
+  .passwordInput {
+    width: 93%;
+    height: 4.25rem;
+    margin: 1.5rem 0;
+  }
+  .passwordInput input {
+    margin: 0;
+  }
+  .passwordInput svg {
+    font-size: 2rem;
+  }
+  .forgotContainer p {
+    font-size: 1.75rem;
+    padding-right: 1.25rem;
+    padding-top: 1rem;
+  }
+  .rightLoginButton {
+    width: 100%;
+    align-items: flex-start;
+  }
+  .rightLoginButton button {
+    height: 3.5rem;
+    font-size: 1.5rem;
+    margin: 2rem;
+  }
+  .registerContainer {
+    width: 100%;
+  }
+  .registerContainer p {
+    font-size: 1.75rem;
+  }
+  .registerContainer span {
+    font-size: 1.75rem;
+    padding-right: 1.25rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .loginSecondContainer {
+    width: 95%;
+    height: 95%;
+    box-shadow: 18px 18px 40px 0px #25313d8c;
+    border: 1px solid #cfd3d8;
+  }
+  .containerLeft {
+    display: none;
+  }
+  .containerRight {
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+  }
+  .mLogoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .mImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+  }
+  .mImage img {
+    width: 100%;
+    height: 100%;
+    padding-top: 1.75rem;
+  }
+  .rightHeader {
+    width: 100%;
+    justify-content: center;
+  }
+  .rightHeader p {
+    font-size: 2.5rem;
+    padding-top: 1.25rem;
+  }
+  .rightHeader svg {
+    display: none;
+  }
+  .rightSecondHeader {
+    align-items: center;
+    width: 100%;
+  }
+  .rightSecondHeader p {
+    font-size: 2.5rem;
+  }
+  .rightSecondHeader span {
+    font-size: 1.75rem;
+    line-height: 50px;
+    text-align: center;
+  }
+  .rightInputContainer {
+    width: 100%;
+  }
+  .inputValue {
+    align-items: center;
+  }
+  .inputValue label {
+    font-size: 1.75rem;
+    width: 100%;
+    padding-left: 4rem;
+  }
+  .inputValue p {
+    font-size: 1.75rem;
+    width: 100%;
+    padding-left: 4rem;
+  }
+  .inputValue input {
+    width: 90%;
+    height: 4rem;
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+  }
+
+  .passwordInput {
+    width: 93%;
+    height: 4rem;
+    margin: 1.5rem 0;
+  }
+  .passwordInput input {
+    margin: 0;
+  }
+  .passwordInput svg {
+    font-size: 2rem;
+  }
+  .forgotContainer p {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+  .rightLoginButton {
+    width: 100%;
+    align-items: flex-start;
+  }
+  .rightLoginButton button {
+    height: 4rem;
+    font-size: 1.75rem;
+    margin: 1.5rem 0;
+  }
+  .registerContainer {
+    width: 100%;
+  }
+  .registerContainer p {
+    font-size: 1.5rem;
+  }
+  .registerContainer span {
+    font-size: 1.5rem;
+    padding-right: 1rem;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+  .loginSecondContainer {
+    width: 95%;
+    height: 95%;
+    box-shadow: 18px 18px 40px 0px #25313d8c;
+    border: 1px solid #cfd3d8;
+  }
+  .containerLeft {
+    display: none;
+  }
+  .containerRight {
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+  }
+  .mLogoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .mImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+  }
+  .mImage img {
+    width: 100%;
+    height: 100%;
+    margin-top: 1.75rem;
+  }
+  .rightHeader {
+    width: 100%;
+    justify-content: center;
+  }
+  .rightHeader p {
+    font-size: 3rem;
+    padding-top: 3rem;
+  }
+  .rightHeader svg {
+    display: none;
+  }
+  .rightSecondHeader {
+    align-items: center;
+    width: 100%;
+    padding-top: 3rem;
+  }
+  .rightSecondHeader p {
+    font-size: 3rem;
+  }
+  .rightSecondHeader span {
+    font-size: 2.25rem;
+    text-align: center;
+    padding-top: 0.75rem;
+  }
+  .rightInputContainer {
+    width: 100%;
+    padding-top: 5rem;
+  }
+  .inputValue {
+    align-items: center;
+  }
+  .inputValue label {
+    font-size: 2.25rem;
+    width: 100%;
+    padding-left: 5rem;
+  }
+  .inputValue p {
+    font-size: 2.25rem;
+    width: 100%;
+    padding-left: 5rem;
+  }
+  .inputValue input {
+    width: 90%;
+    height: 6rem;
+    font-size: 1.85rem;
+    margin: 2rem 0;
+    padding-left: 1.25rem;
+  }
+
+  .passwordInput {
+    width: 93%;
+    height: 6rem;
+    margin: 2rem 0;
+  }
+  .passwordInput input {
+    margin: 0;
+  }
+  .passwordInput svg {
+    font-size: 3rem;
+  }
+  .forgotContainer p {
+    font-size: 2.25rem;
+    padding-right: 1.75rem;
+    padding-top: 1.5rem;
+  }
+  .rightLoginButton {
+    width: 100%;
+    align-items: flex-start;
+  }
+  .rightLoginButton button {
+    height: 6rem;
+    font-size: 2.25rem;
+    margin: 2.25rem 0;
+  }
+  .registerContainer {
+    width: 100%;
+  }
+  .registerContainer p {
+    font-size: 2.25rem;
+  }
+  .registerContainer span {
+    font-size: 2.25rem;
+    padding-right: 1.75rem;
+  }
+}
