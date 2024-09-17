@@ -60,6 +60,7 @@ const SignIn = () => {
             navigate("/");
             localStorage.setItem("userData", JSON.stringify(data.user_data));
           } else {
+            setLoading(false);
             setErrors({ email: "", password: "", apiError: data.msg });
           }
         });
